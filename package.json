@@ -1,0 +1,34 @@
+{
+    "name": "grunt-gitbook",
+    "version": "0.0.1",
+    "description": "Static GitBook site compiler",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/GitbookIO/grunt-gitbook.git"
+    },
+    "main": "grunt.js",
+    "keywords": [
+        "gruntplugin",
+        "gitbook",
+        "static"
+    ],
+    "author": "Samy Pesse <samypesse@gmail.com>",
+    "contributors": [
+        "Aaron O'Mullan <aaron.omullan@gmail.com>"
+    ],
+    "license": "Apache 2",
+    "dependencies": {
+        "gitbook": "git+https://github.com/GitbookIO/gitbook.git#84d703c6f5ffd8a3cfc652083ad17411f73b51ba"
+    },
+    "scripts": {
+        "test": "grunt test"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-clean": "~0.5.0",
+        "grunt-mocha-test": "~0.7.0"
+    },
+    "peerDependencies": {
+        "grunt": "~0.4.1"
+    }
+}
