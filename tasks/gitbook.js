@@ -16,6 +16,7 @@ module.exports = function(grunt) {
             config.dest,
             {
                 title: config.title,
+                description: config.description,
                 github: config.github
             }
         )
