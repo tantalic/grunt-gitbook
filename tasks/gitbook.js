@@ -12,9 +12,9 @@ module.exports = function(grunt) {
         }
         
         gitbook.generate.folder(
-            config.input,
-            config.dest,
             {
+                input: config.input,
+                output: config.dest,
                 title: config.title,
                 description: config.description,
                 github: config.github
