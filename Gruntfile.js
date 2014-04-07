@@ -8,7 +8,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         gitbook: {
             development: {
-                dest: path.join(__dirname, "test/dest"),
+                output: path.join(__dirname, "test/dest"),
                 input: "test/input",
                 title: "Test",
                 github: "GitbookIO/grunt-gitbook"

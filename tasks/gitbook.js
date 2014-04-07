@@ -6,20 +6,8 @@ module.exports = function(grunt) {
     grunt.registerMultiTask('gitbook', 'gitbook builder', function() {
         var config = this.data;
         var done = this.async();
-
-        if (!config.dest || !config.input || !config.title || !config.github) {
-            return done(new Error("Need options 'dest', 'input', 'title' and 'github'"));
-        }
         
-        gitbook.generate.folder(
-            {
-                input: config.input,
-                output: config.dest,
-                title: config.title,
-                description: config.description,
-                github: config.github
-            }
-        )
+        gitbook.generate.folder(config)
         .then(function() {
             done();
         }, done);
