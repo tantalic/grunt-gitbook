@@ -15,11 +15,11 @@ helpers.assertFile = function (file, reg) {
 
 describe('grunt-gitbook', function() {
 
-    it('should create dest/README html', function(){
-        helpers.assertFile('test/dest/README.html');
+    it('should create dest/index.html', function(){
+        helpers.assertFile('test/dest/index.html');
     });
 
-    it('should create dest/test html', function(){
+    it('should create dest/test.html', function(){
         helpers.assertFile('test/dest/test.html');
     });
 });
