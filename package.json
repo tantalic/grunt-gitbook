@@ -1,6 +1,6 @@
 {
     "name": "grunt-gitbook",
-    "version": "0.4.2",
+    "version": "0.4.3",
     "description": "Static GitBook site compiler",
     "repository": {
         "type": "git",
